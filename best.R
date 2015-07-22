@@ -36,7 +36,7 @@ best <- function(state, outcome) {
 		lowestMortalityRate <- min( outcome_data[,outcome_col], na.rm = TRUE )
 		hasLowestMortality <- outcome_data[,outcome_col] == lowestMortalityRate
 		lowestMortalityHospitals <- outcome_data[ which( hasLowestMortality ),
-																"Hospital.Name" ]
+										"Hospital.Name" ]
 		lowestMortalityHospitals <- sort( lowestMortalityHospitals )
 
 		return( lowestMortalityHospitals[1] )
