@@ -9,7 +9,6 @@ Output the name of the hospital with the lowest 30-day mortality rate in for ```
     * Restraints: ```outcome = "heart attack" , "heart failure" , "pneumonia"```
 * **return value** -> [String] The name of a hospital
     * Example:
-    *
             > best( "OH, "heart failure")
             [1] "FAIRVIEW HOSPITAL"
 
@@ -25,7 +24,6 @@ Output the name of the hospital ranked ```num``` lowest in 30-day mortality rate
     * Default: ```num = "best"```
 * **return value** -> [String] The name of a hospital
     * Example:
-    *
             > rankhospital( "FL, "pneumonia", 3)
             [1] "DELRAY MEDICAL CENTER"
 
@@ -39,7 +37,6 @@ For each state, output the name of the hospital ranked ```num``` lowest in 30-da
     * Default: ```num = "best"```
 * **return value** -> [Data Frame] A list of hospital names with the associated states
     * Example:
-    *
             > head(rankall("heart attack", "worst"))
                                        hospital state
             AK   MAT-SU REGIONAL MEDICAL CENTER    AK
