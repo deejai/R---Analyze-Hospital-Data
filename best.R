@@ -3,7 +3,6 @@
 ## Get the best hospital in a given state in terms of lowest mortality rate by
 ## the given cause of death
 
-
 best <- function(state, outcome) {
 
 	## Read outcome data (type: "heart attack", "heart failure", or "pneumonia")
