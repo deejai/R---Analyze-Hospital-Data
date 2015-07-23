@@ -49,7 +49,7 @@ rankall <- function(outcome, num = "best") {
   		for( var_state in state_list ){
   			state_data <- outcome_data[outcome_data$State==var_state,]
   			state_data <- state_data[ order( state_data[,outcome_col],
-  													  state_data$Hospital.Name ), ]
+  								state_data$Hospital.Name ), ]
   			if( numFun( state_data ) > nrow( state_data ) ){
   				data_list[index,1] <- NA
   			}
